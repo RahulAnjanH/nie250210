@@ -10,6 +10,24 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="flights_list.html">Airline Reservation System</a> 
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="flights_list.html">flights</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="flight_create.html">Add flight</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
     <h3>List Of Flights</h3>
     <div class="container">
         <table class="table table-primary table-striped">
@@ -19,6 +37,7 @@
                     <th scope="col">Airline name </th>
                     <th scope="col">Source </th>
                     <th scope="col">destination</th>
+                    <th scope="col"></th>
                 </tr>
             </thead>
             <tbody>
@@ -27,12 +46,16 @@
                     <td>AirIndia</td>
                     <td>Mumbai</td>
                     <td>Abu Dabi</td>
+                    <td><a href="flight_edit.html" class="btn btn-warning">Edit</a>
+                    <button class="btn btn-danger">Delete </button></td>
                 </tr>
                 <tr>
                     <th scope="row">6C151</th>
                     <td>Indigo</td>
                     <td>Hyderabad</td>
                     <td>Bengaluru</td>
+                    <td><a href="flight_edit.html" class="btn btn-warning">Edit</a>
+                    <button class="btn btn-danger">Delete </button></td>
                 </tr>
             </tbody>
         </table>
