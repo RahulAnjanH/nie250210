@@ -24,3 +24,33 @@ what is html5?
     markup language to mark the content of teh site pages
 what is css3?
     style language to make webpage look and feel
+react is developed in server side js --node js used in client side (translation of server side code base to client side code base)
+what is react?
+frontend application framework library (framework)
+client application/business data 
+ 3 running in diff computer is called cluster 
+ client -- react,angular
+ application -- golang,express,django/flask,springboot
+ data   -- mongodb,mysql,RDBMS,sqllite
+---------------------------------------
+to create react application
+$ npm create vite@latest -- --template react
+
+to create react application folder under client folder
+spa -- single page application
+jsx -- java script xmel (UI)
+------------------------------------------------------
+index.html
+    include bootstrap css + script
+main.jsx (in src folder)
+    // index.css
+App.jsx
+    PageList,PageCreate,PageEdit
+    /flight/list    /flight/create /flight/edit/:id
+    <Pageheader/>
+src/hader/
+    Pageheader.jsx
+src/flights/
+    FlightList.jsx
+    FlightCreate.jsx
+    FlightEdit.jsx
