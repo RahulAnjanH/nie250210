@@ -63,3 +63,22 @@ client bootstrap based html files
 03 app_mongoless
 client server go lang (gin library/framework)| backend | Restful API (Http based websites)
 webserver port number - 80
+---------------------------------------------------------------------------------------------------
+ to run a go file    
+ ---go run file.go
+CRUD operations
+        REST API (framework gin )
+        POST,GET,PUT,DELETE(http method)base server url http://localost2032
+            verb            noun
+-Create car  POST method /cars      {"Number":"number","model":"model","type": "type" } 
+-Read allcars    GET     /cars 
+-Read car by id GET      /cars/:id
+-Update car      PUT     /cars/:id   {"Number":"number","model":"model","type": "type" }
+-Delter car      DELETE        /cars/:id    
+
+verb noun -- method url 
+------------------------------------------------------------------------
+To read the API's
+Thunderclient(client tool) extension     
+
+go mod init example.com/main
