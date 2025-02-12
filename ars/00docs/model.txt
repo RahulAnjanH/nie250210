@@ -34,7 +34,7 @@ client application/business data
  data   -- mongodb,mysql,RDBMS,sqllite
 ---------------------------------------
 to create react application
-$ npm create vite@latest -- --template react
+$ npm create vite@latest . -- --template react
 
 to create react application folder under client folder
 spa -- single page application
@@ -54,3 +54,12 @@ src/flights/
     FlightList.jsx
     FlightCreate.jsx
     FlightEdit.jsx
+
+01bs
+client bootstrap based html files
+02 app_design
+    client react based app design
+
+03 app_mongoless
+client server go lang (gin library/framework)| backend | Restful API (Http based websites)
+webserver port number - 80
