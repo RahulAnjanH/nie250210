@@ -1,6 +1,9 @@
+import PageHeader from "../header/PageHeader";
+
 function GameEdit(){
     return (
         <>
+       <PageHeader/> 
     <h3><a href="/games/list" class="btn btn-light">Go back</a>Edit the Price of the Game</h3>
     <div class="container">
         <div class=" form-group mb-3">

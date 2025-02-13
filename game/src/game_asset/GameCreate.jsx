@@ -1,6 +1,9 @@
+import PageHeader from "../header/PageHeader";
+
 function Gamecreate(){
     return (
         <>
+        <PageHeader/>
     <h3><a href="/games/list" class="btn btn-light">Go back</a>New Game</h3>
     <div class="container">
         <div class=" form-group mb-3">

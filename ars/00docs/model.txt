@@ -35,26 +35,39 @@ client application/business data
 ---------------------------------------
 to create react application
 $ npm create vite@latest . -- --template react
-
 to create react application folder under client folder
+       ******(vite initilizer react framework)
 spa -- single page application
 jsx -- java script xmel (UI)
 ------------------------------------------------------
 index.html
-    include bootstrap css + script
-main.jsx (in src folder)
+    include bootstrap css + script copy link from bootstrap website
+main.jsx(javascript{code} xmel{ui}) (in src folder)
     // index.css
 App.jsx
+    remove extra content above and  in body 
     PageList,PageCreate,PageEdit
     /flight/list    /flight/create /flight/edit/:id
     <Pageheader/>
 src/hader/
     Pageheader.jsx
+    inside return statement in the function the code is parsed into javascript(put inside the empty element{<></>})
+    export default Pageheader(to make the function as a component {to use it later using import from})
 src/flights/
     FlightList.jsx
     FlightCreate.jsx
     FlightEdit.jsx
-
+in app.jsx
+    For navigation we have to route{using react router dom}
+    --- npm install react-router dom
+    --(to verify open pakage.json it will be present in dependencies)
+    first BrowserRouter --- container component (not self closing) 
+    then Routes container component (if not imported ctrl+spacebar and then select the option)
+    Route inside define paths and it is self closing
+    in route give path and component to element
+for edit give id 
+(Location API and History Api to switch between pages)
+to move using code button and onclick and import usenavigate from router dom 
 01bs
 client bootstrap based html files
 02 app_design
@@ -67,10 +80,10 @@ webserver port number - 80
  to run a go file    
  ---go run file.go
 CRUD operations
-        REST API (framework gin )
+        RESTful API (framework gin )
         POST,GET,PUT,DELETE(http method)base server url http://localost2032
             verb            noun
--Create car  POST method /cars      {"Number":"number","model":"model","type": "type" } 
+-Create car  POST method /cars      {"Number":"number","model":"model","type": "type" }(flight JSON (javascript object notation)Object ) 
 -Read allcars    GET     /cars 
 -Read car by id GET      /cars/:id
 -Update car      PUT     /cars/:id   {"Number":"number","model":"model","type": "type" }
@@ -82,3 +95,46 @@ To read the API's
 Thunderclient(client tool) extension     
 
 go mod init example.com/main
+-------------------------------------------
+To write client application server application should be running
+server application layer ui logic
+client  application       ux logic
+
+all ui will sit in root element (main.jsx)
+dom (document object model) UI's are written in virtual dom(using render function)
+Node bundle
+---------------------------------------------
+to complete fullstack 
+copy client folder from 02 client design to 03 client folder
+
+to fetech from the server we use axios
+NOTE: Server main.go should be runnung
+
+function we cant maintain state -- so framework does (we connect{hook })
+npm install axios
+
+useState returns 2 array (state, function)
+(2nd functional element setflights used to change)
+ 
+ map function (highter order method)
+    which takes another method and make changes to the array (arr_name.map((arg)=>{return logic for array;})) 
+    does in one single function
+    example of incrementing salaries
+    > const salaries = [1000,25000,35000,28000]
+undefined
+    > salaries
+    [ 1000, 25000, 35000, 28000 ]
+    > const increment = salaries.map((sal) => {return sal+5})
+    undefined
+    > increment
+    [ 1005, 25005, 35005, 28005 ]
+-----------------------
+change the fields in th to flight.number and change everywhere 
+in href edit button change double quotes to  backtick and then id number to ${flight.id}
+this is called row binding 
+
+3 states in promise success pending error
+
+after mount(code inside)
+before unmount(return statement)
+after update( dependency array)
