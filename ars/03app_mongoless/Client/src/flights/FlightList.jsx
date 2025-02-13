@@ -7,7 +7,7 @@ function FLightList() {
     ]);
     const readAllFlights= async() => {
             try{
-                const baseurl ="http://localhost:8080"; 
+                const baseurl ='http://localhost:8080'; 
                 const response = await axios.get(`${baseurl}/flights`);
                 setFlights(response.data);
             }
