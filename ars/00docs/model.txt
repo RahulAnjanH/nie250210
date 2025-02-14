@@ -138,3 +138,15 @@ this is called row binding
 after mount(code inside)
 before unmount(return statement)
 after update( dependency array)
+----------------------------------------------------------------
+In mongodb data is organized as document
+schema less -- extension of RDBMS
+
+mongodb commands
+use dbname_db;
+show collections;
+db.dbname.find();
+collection(tables in RDBMS) in db is sets (should be unique)
+collection will have document's
+(mongodb is in bson)
+
